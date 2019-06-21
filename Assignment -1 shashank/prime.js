@@ -1,8 +1,8 @@
-function CheckPrime(Number)
+function cPrime(number)
 {
-    for(let i=2;i<Number;i++)
+    for(let i=2;i<number;i++)
     {
-        if(Number%i==0)
+        if(number%i==0)
         {
             return false;
         }
@@ -11,18 +11,18 @@ function CheckPrime(Number)
     return true;
 }
 
-function PrintPrime(Number)
+function Prime(number)
 {
     let PrimeNumbers=""
-    for(let i=2;i<Number;i++)
+    for(let i=2;i<number;i++)
     {
-        if(CheckPrime(i))
+        if(CPrime(i))
             PrimeNumbers=PrimeNumbers+i+"<br>";
     }
     return PrimeNumbers;
 }
 
-PrimeNumbers=PrintPrime(1000);
+PrimeNumbers=Prime(1000);
 
 
 DOM=document.getElementById("PrimeNumbers");
