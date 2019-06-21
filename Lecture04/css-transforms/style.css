@@ -1,0 +1,38 @@
+div {
+  margin: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: coral;
+}
+
+#div1 {
+  transform: scaleY(0.2);
+}
+
+#div2 {
+  transform: scale(2);
+}
+
+#div4 {
+  transform: scale(0.5);
+}
+
+#div3 {
+  transform: rotate(45deg);
+}
+
+#div5 {
+  transform: rotateX(60deg);
+}
+
+#div6 {
+  transform: skewX(90deg);
+}
+
+#div7 {
+  transform: translateY(40px);
+}
+
+#div8 {
+  transform: matrix(1, 1, 1, 0.5, 30, 50);
+}

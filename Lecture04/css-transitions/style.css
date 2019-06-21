@@ -1,0 +1,26 @@
+div {
+  margin: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: mediumseagreen;
+  transition: 2s;
+}
+
+#div2:hover {
+  background-color: darkmagenta;
+}
+
+#div3:hover {
+  border: 10px solid black;
+  width: 500px;
+  transition: width 2s, border 5s;
+}
+
+#div4:hover {
+  transform: scale(2)
+}
+
+#div5:hover {
+  height: 80px;
+  width: 80px;
+}

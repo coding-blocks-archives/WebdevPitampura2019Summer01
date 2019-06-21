@@ -1,0 +1,22 @@
+#p1 {
+    color: red;
+}
+#p2 {
+    color: brown;
+}
+
+#html {
+    color: blue;
+}
+
+input[type*="e"] {
+    border: 5px solid red;
+}
+
+div > p {
+    color: brown !important;
+}
+
+a:hover {
+    color: brown;
+}

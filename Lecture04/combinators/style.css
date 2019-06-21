@@ -1,0 +1,21 @@
+p {
+  color: red;
+}
+
+
+div p {
+  color: blue;
+}
+
+div > span {
+  font-size: 20pt;
+}
+
+
+div + p {
+  font-weight: bold;
+}
+
+div ~ p {
+  font-family: Arial;
+}

@@ -1,0 +1,10 @@
+html {
+    font-size: 42px;
+    color: red;
+}
+
+p {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: green;
+}
