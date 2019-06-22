@@ -1,0 +1,24 @@
+.container {
+  height: 500px;
+  width: 500px;
+  background-color: aquamarine;
+  border: solid black 2px;
+  margin: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-around;
+}
+
+.item {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  background-color: darksalmon;
+  border: solid black 2px;
+}
