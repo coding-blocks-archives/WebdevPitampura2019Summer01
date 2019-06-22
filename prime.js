@@ -11,11 +11,11 @@ function prime(x)
         }
     }
     if(flag==1)
-    {   print="Yes, the number x is prime"
+    {   print="NO, the number x is not prime"
         
     }
     else
-    {print="No, the number x in not prime"
+    {print="Yes, the number x in  prime"
         
     }
     para.innerHTML=print
