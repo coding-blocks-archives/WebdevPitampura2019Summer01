@@ -1,29 +1,43 @@
+let PrintButton=document.getElementById("PrintButton");
+let Number=document.getElementById("Number");
+
 function CheckPrime(Number)
 {
     for(let i=2;i<Number;i++)
     {
         if(Number%i==0)
-        {
             return false;
-        }
-
     }
     return true;
 }
 
-function PrintPrime(Number)
+PrintButton.onclick=function()
 {
-    let PrimeNumbers=""
-    for(let i=2;i<Number;i++)
+    const NumberList=document.getElementById("NumberList");
+    let NumberInput=parseInt(Number.textContent);
+
+    //Removing Children
+    while(NumberList.firstChild)
+        NumberList.removeChild(NumberList.firstChild);
+
+    let i=2;
+    const PrintPrime=setInterval(function()
     {
         if(CheckPrime(i))
-            PrimeNumbers=PrimeNumbers+"> "+i+"<br>";
-    }
-    return PrimeNumbers;
+        {
+            let ListItem=document.createElement("div");
+            ListItem.setAttribute("class", "ListItem");
+            ListItem.textContent=i;
+            NumberList.appendChild(ListItem);
+        }
+        i++;
+        if(i==NumberInput)
+            clearInterval(PrintPrime);
+        
+            
+    },50);
+
 }
 
-PrimeNumbers=PrintPrime(1000);
 
 
-DOM=document.getElementById("PrimeNumbers");
-DOM.innerHTML=PrimeNumbers;
