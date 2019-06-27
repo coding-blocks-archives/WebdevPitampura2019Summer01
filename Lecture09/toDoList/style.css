@@ -1,0 +1,12 @@
+body{
+    background-color: lightcyan;
+}
+
+li{
+    border: 1px solid black;
+    border-radius: 5px; 
+    /* display: list-item; */
+    width: 100px;
+    margin: 3px;
+    display: none;
+}
