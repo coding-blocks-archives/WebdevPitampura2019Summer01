@@ -10,7 +10,7 @@
 // })
 
 
-const state = [{
+let state = [{
     title: 'Endgame',
     striked: true
 }]
@@ -29,13 +29,14 @@ function render (state) {
             html += `<li>${state[i].title}</li>`
         }
     }
-
     return html
 }
 
 function paint () {
     const songList = document.getElementById('songList')
+    document.getElementById('inputbox').value = ""
     songList.innerHTML = render(state)
+
 }
 
 
@@ -53,4 +54,19 @@ window.onload = function () {
 
 paint()
 
+const songList = document.getElementById('songList')
+songList.addEventListener('click', function (e) {
+    const title = e.target.innerHTML
+    const selectedSong = state.find(function (song)  {
+        return song.title === title
+    })
+    selectedSong.striked = !selectedSong.striked
+    paint()
+})
 
+document.getElementById('binButton').addEventListener('click', function () {
+    state = state.filter(function (song) {
+        return !song.striked
+    })
+    paint()
+})
