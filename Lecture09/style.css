@@ -1,0 +1,22 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border-radius: 8px;
+}
+
+.enterhere {
+    margin-left: 35%;
+    align-content: center;
+}
+
+.inputtext {
+    padding-left: 130px;
+}
+
+.remove {
+    margin-top: 80px;
+    margin-left:44%;
+}
