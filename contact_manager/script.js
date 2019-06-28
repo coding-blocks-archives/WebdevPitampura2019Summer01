@@ -11,7 +11,7 @@ function render()
         <li>Address: ${state[i].address}</li>
         </ol>`
     }
-    console.log(html)
+   
     return  html;
 }
 
