@@ -1,0 +1,81 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+#inputdetails{
+    height: 140px;
+    width: 300px;
+    background-color:grey;
+    margin: 20px;
+    padding: 20px;
+    border: solid black 2px;
+    border-radius: 20px;
+}
+
+#inputdetails:hover{
+    box-shadow: 0px 0px 10px 10px darksalmon;
+}
+
+@keyframes buzz{
+    0%{
+        left:0px;
+    }
+
+    40%{
+        left:20px;   
+    }
+
+    70%{
+        right: 20px;
+    }
+
+    100%{
+        left:0px;
+    }
+}
+
+input:hover{
+    position: relative;
+    animation-name: buzz;
+    animation-duration: 0.5s;
+}
+
+#add{
+    border-radius: 20px;
+    position: relative;
+}
+
+button:hover{
+    background-color: powderblue;
+}
+
+#list{
+    list-style: none;
+}
+
+ul>li{
+    height: 150px auto;
+    width: 150px auto;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    border: solid black 2px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+ul>li:hover{
+    box-shadow: inset 0px 0px 10px;
+}
+
+button{
+    margin: 5px;
+    border: solid black 2px;
+    border-radius: 20px;
+}
+
+img{
+    float:right;
+    border-radius: 50px;
+}
