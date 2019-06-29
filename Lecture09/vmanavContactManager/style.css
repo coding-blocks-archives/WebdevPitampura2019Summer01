@@ -1,0 +1,112 @@
+body{
+    /* background: #2980B9;  fallback for old browsers */
+    /* background: linear-gradient(to right, #1f4037, #99f2c8); */
+    /* background-color: #f5f5f5; */
+    background-color: lightgoldenrodyellow;
+    font-family: Roboto;
+}
+
+h3{
+    font-style: italic;
+    font-weight: bold;
+}
+#container{
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.inputs{
+    height: 20px;
+    width: 45vw;
+    margin: 2px;
+    border: none;
+    background-color: #F5F5DC;
+    color: #4d4d4d;
+    font-style: italic;
+    padding: 3px 30px;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 9px 0 rgba(0,0,0,0.2);
+
+}
+
+#Abutton{
+    background-color: #F5F5DC;
+    box-shadow: 0 5px 9px 0 rgba(0,0,0,0.2);
+    width: 80px;
+    padding: 0px;
+    margin: 5px;
+    height: 25px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    color: #685959;
+    font-weight: lighter;
+    font-size: 18px;
+    
+}
+
+#Abutton:hover {
+    cursor: pointer;
+}
+
+#Abutton:active{
+    transform: scale(1.4);
+    transition: .15s;
+}
+
+#container2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.card {
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 130px;
+    height: 150px;    
+    background-color: #f5f5f5;
+    margin: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+ul{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    font-size: 13px;
+}
+li{
+    margin: 5px;
+}
+.delButton{
+    margin: 5px;
+    border-radius: 2px;
+    float: right;
+    /* border: 12px solid lightgoldenrodyellow ;  */
+    background-color: lightgoldenrodyellow;
+    box-shadow: 1px 5px 9px 0 rgba(0,0,0,0.3);
+    width: 70px;
+    padding: 0px;
+    height: 20px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    color: #685959;
+    font-weight: bold;
+    
+}
+
+.toBeDeleted{
+    opacity: 0.3; 
+    background: lightslategray;
+    pointer-events: none;   
+}
