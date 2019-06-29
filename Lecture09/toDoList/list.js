@@ -1,4 +1,0 @@
-function addItem()
-{
-    document.getElementById
-}
