@@ -16,5 +16,7 @@ app.get('/', (req, res) => {
   })
 })
 
+app.use('/assets', express.static(__dirname + '/public'))
+
 
 app.listen(8765)
