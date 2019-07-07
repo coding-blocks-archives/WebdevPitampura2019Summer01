@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="todo.js"></script>
-</head>
-<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="todo.js"></script>
+  </head>
+  <body>
+    <input class="todo" id="task" />
+    <button class="todo" id="add">ADD</button>
+    <button class="todo" id="clear">CLEAR</button>
+    <ul class="todo" id="todolist"></ul>
 
-  <input class="todo" id="task">
-  <button class="todo"  id="add">ADD</button>
-  <button class="todo"  id="clear">CLEAR</button>
-  <ul class="todo"  id="todolist"></ul>
-</body>
+    <form id="taskform">
+      <input id="newtask" />
+      <button id="submit">ADD</button>
+    </form>
+
+
+  </body>
 </html>
