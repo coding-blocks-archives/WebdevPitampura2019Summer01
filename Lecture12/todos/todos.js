@@ -25,10 +25,10 @@ route.patch('/:id', (req, res) => {
 })
 
 route.delete('/:id', (req, res) => {
-    const selectedTodo = todos.find(user => user.id == req.params.id)
-    if (!selectedTodo.striked) {
-        return res.status(403).send('Can only delete striked todos')
-    }
+    // const selectedTodo = todos.find(user => user.id == req.params.id)
+    // if (!selectedTodo.striked) {
+    //     return res.status(403).send('Can only delete striked todos')
+    // }
     todos = todos.filter(todo => todo.id != selectedTodo.id)
     res.sendStatus(200)
 })
