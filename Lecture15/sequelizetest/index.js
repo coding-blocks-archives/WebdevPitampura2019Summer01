@@ -36,11 +36,30 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   const newBand = {
     title: req.body.title,
-    // striked: req.body.striked
   }
   Bands.create(newBand).then(band => {
     res.json(band)
   })
+})
+
+app.patch('/:id', (req, res) => {
+  const obj = req.body
+  delete obj.id
+  Bands.update(obj, {
+    where: {
+      id: req.params.id
+    }
+  }).then(() => {
+    res.sendStatus(200)
+  })
+})
+
+app.delete('/', (req, res) => {
+  Bands.destroy({
+    where: {
+      striked: true
+    }
+  }).then(() => res.sendStatus(204))
 })
 
 
