@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container pt-1">
+    <a href="/"> &lt; Back</a>
+  </div>
+  <div class="container mt-4">
+    <h3 class="my-5">Add New Blog</h3>
+    <form action="/" method="POST">
+      <div class="form-group">
+        <label>Blog Title</label>
+        <input type="text" class="form-control" name="title" placeholder="Enter blog title">
+        <small class="form-text text-muted">This will be the title of your blog post</small>
+      </div>
+      <div class="form-group">
+        <label>Body</label>
+        <textarea type="text" class="form-control" name="body" placeholder="Enter blog body"></textarea>
+        <small class="form-text text-muted">This will be the body of your blog post</small>
+
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>

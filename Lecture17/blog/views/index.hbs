@@ -25,9 +25,12 @@
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/add">Add</a>
+          </li>
           {{#each blogs}}
             <li class="nav-item">
-              <a class="nav-link" href="?blog={{id}}">{{title}}</a>
+              <a class="nav-link" href="?blog={{_id}}">{{title}}</a>
             </li>
           {{/each}}
         </ul>
