@@ -11,7 +11,16 @@ app.use(session({
 }))
 
 app.get('/', (req ,res) => {
-  res.send('Hello there!')
+  console.log(req.session)
+
+  if (!req.session.visits) {
+    req.session.visits = 1
+    res.send('Hello There')
+  } else {
+    req.session.visits++
+    res.send('Welcome Back')
+  }
+  req.session.save()
 })
 
 
