@@ -52,6 +52,22 @@ app.post(
   }),
 )
 
+
+app.get('/login/facebook', passport.authenticate('facebook'))
+
+app.get('/login/facebook/callback', passport.authenticate('facebook', {
+  successRedirect: '/home',
+  failureRedirect: '/login'
+}))
+
+app.get('/login/github', passport.authenticate('github'))
+
+app.get('/login/github/callback', passport.authenticate('github', {
+  successRedirect: '/home',
+  failureRedirect: '/login'
+}))
+
+
 function checkLoggedIn(req, res, next) {
   if (req.user) {
     return next()
@@ -66,6 +82,7 @@ app.get('/home', checkLoggedIn, (req, res) => {
 app.get('/home2', checkLoggedIn, (req, res) => {
   res.send('Welcome Home2')
 })
+
 
 db.sync().then(() => {
   app.listen(8787, () => {

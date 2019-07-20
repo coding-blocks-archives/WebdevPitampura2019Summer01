@@ -1,0 +1,23 @@
+{
+  "name": "passport-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "hbs": "^4.0.4",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "passport-github": "^1.1.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.10.1",
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
