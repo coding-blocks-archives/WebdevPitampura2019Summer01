@@ -10,7 +10,11 @@ describe('fare utils tests', () => {
     expect(calcFare(4, 0)).to.equal(30)
   })
 
-  it('should be fail without arguments', () => {
+  it('should be 32.5 for 4 km and 20 min', () => {
+    expect(calcFare(4, 20)).to.equal(32.5)
+  })
+
+  it('should fail without arguments', () => {
     try {
       calcFare()
     } catch (e) {
