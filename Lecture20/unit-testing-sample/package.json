@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node run.js",
     "test": "mocha tests",
     "cover": "nyc --reporter=html mocha tests"
   },
@@ -15,6 +16,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.0",
-    "nyc": "^14.1.1"
+    "nyc": "^14.1.1",
+    "request": "^2.88.0"
   }
 }

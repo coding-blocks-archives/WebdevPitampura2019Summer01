@@ -12,10 +12,14 @@ app.get('/fare', (req, res) => {
   // calculate fare here
 
   res.json({
-    fare: calcFare(km, min)
+    fare: calcFare(km, min),
   })
 })
 
-app.listen(4567, () => {
-  console.log('Server running http://localhost:4567')
+app.get('/hello', (req, res) => {
+  res.send('Hello')
 })
+
+module.exports = {
+  app,
+}
