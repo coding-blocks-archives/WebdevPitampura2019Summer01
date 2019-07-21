@@ -34,9 +34,14 @@ passport.use(
       callbackURL: 'http://localhost:8787/login/facebook/callback',
     },
     (accessToken, refreshToken, profile, done) => {
-      Users.create({
-        username: profile.id,
-        fbAccessToken: accessToken,
+      Users.findCreateFind({
+        where: {
+          username: profile.id,
+        },
+        defaults: {
+          username: profile.id,
+          fbAccessToken: accessToken,
+        },
       })
         .then((user) => {
           done(null, user)
