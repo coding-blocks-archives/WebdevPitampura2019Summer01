@@ -1,0 +1,12 @@
+body
+{
+    font-family: monospace;
+    font-size: 30px;
+    margin-left: 50px;
+
+}
+
+.inputText
+{
+    display: inline;
+}

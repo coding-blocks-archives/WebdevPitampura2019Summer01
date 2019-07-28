@@ -1,0 +1,60 @@
+body
+{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-family: monospace;
+}
+
+.Input
+{
+    display: inline-block;
+    background-color: white;
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px 1px 0 lightgray inset;  
+    margin-top: 5px;
+    padding: 2px 3px;
+    width: 150px;  
+    text-align: center;
+    
+}
+
+.Input:empty:before 
+{
+    content: attr(data-placeholder);
+    color: grey;
+}
+
+
+#NumberList
+{
+    margin-top: 20px;
+}
+
+#PrintButton
+{
+    height: 30px;
+    width: 100px;
+    font-size: 25px;
+    transform: translateY(5px);
+}
+
+.ListItem
+{
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: red;
+    font-family: monospace;
+    font-size: 30px;
+    animation-name: Slide;
+    animation-duration: 0.1s;
+}
+
+@keyframes Slide
+{
+  0% { transform: scale(0)};
+  100% { transform: scale(1)};
+}
