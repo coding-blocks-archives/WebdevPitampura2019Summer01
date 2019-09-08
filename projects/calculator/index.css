@@ -1,0 +1,19 @@
+.divo{
+    background-color: mediumpurple;
+    width: 340px;
+    height: 340px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+button {
+    margin: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 30px;
+    padding: 10px 10px;
+  }

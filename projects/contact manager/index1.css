@@ -1,0 +1,43 @@
+#container {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    border:solid 1px;
+     margin: 10px;
+    padding:10px;
+    background-color: bisque;
+    /* overflow:auto;  */
+  }
+  
+#container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+/* #container {
+    padding: 2px 16px;
+    margin:auto;
+
+  } */
+ #abc{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border:solid 1px black;
+     margin: 10px;
+    padding:10px;
+    background-color: aqua;
+    display: inline-block;
+    text-decoration-color: brown;
+    
+    /* overflow:auto;  */
+  }
+  #image1{
+    float: right;    
+    border-radius: 100%;
+    display: inline-block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+
+  }
+  
