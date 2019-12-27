@@ -1,0 +1,52 @@
+.card{
+    width:250px;
+    height: 250px;
+    padding:20px;
+    margin:20px;
+    background-color: bisque;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 25px;
+    word-wrap: break-word;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+#contactList{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#addbutton{
+    border-radius:50%;
+    background-color:red;
+    border:0px;
+    padding:5px;
+}
+.card:hover{
+    transform: translateX(-3px) translateY(-3px);
+    -webkit-transform: translateX(-3px) translateY(-3px);
+    -moz-transform: translateX(-3px) translateY(-3px);
+    -ms-transform: translateX(-3px) translateY(-3px);
+    -o-transform: translateX(-3px) translateY(-3px);
+    box-shadow: 7px 7px 7px gray;
+}
+ul{
+    list-style: none;
+    padding:0;
+}
+ul li{
+    float:left;
+
+}
+img{
+    width:20px;
+    height:20px;
+    float:right;
+    border-radius:50%;
+}
