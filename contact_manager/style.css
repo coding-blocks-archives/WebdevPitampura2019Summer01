@@ -1,0 +1,104 @@
+html
+{   background-color: black;
+    background-image: url('line_pattern.png');
+    /* background: linear-gradient(45deg,#5F27C6,#4A0DB0,#5F2CC9,#5825C0,#6D41BD,#8661C8); */
+    background-repeat: no-repeat;
+    /* height: 300vh; */
+    font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    padding-left: 22px;
+    margin: 0;
+    font-size: 12px;
+    color:  rgb(254, 231, 21);
+   
+   
+}
+#showDiv
+{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-left: 43px;
+}
+#getDiv
+{
+    position: relative;
+    left: 62px;
+    padding-top: 10px;
+
+}
+#add
+{
+    background:  rgba(254, 231, 21,.87);
+    width: 50px;
+    height: 20px;
+    position: relative;
+    bottom: 24px;
+    left: 180px;;
+}
+#getDiv .span2
+{
+    position: relative;
+    top:5px;
+    
+}
+#getDiv .span3
+{
+    position: relative;
+    top:10px;
+    
+}
+
+#getName
+{
+    top: 2px;
+    position: relative;
+    left:11.58px;
+    background-color: rgba(250, 246, 246,.5);
+}
+#getPhone
+{
+    top:5px;
+    position: relative;
+    left:9.2px;
+    background-color: rgba(250, 246, 246,.5);   
+}
+#getAddress
+{
+    position: relative;
+    top:10px;
+    left:0px;
+    background-color: rgba(250, 246, 246,.5);  
+    
+    
+}
+
+
+.list
+{
+    list-style: none;
+    color: black;
+    font-size: 14px;
+    width:170px;
+    height: 160px;
+    background-color:  rgba(254, 231, 21,.8); 
+    padding: 0px;
+    margin-left: 20px;
+    
+
+}
+.list >li
+{
+    padding: 15px;
+}
+#showDiv .list
+{
+    transition: .2s;
+}
+
+#showDiv .list:hover
+{
+    font-size: 20px;
+    width:220px;
+    height: 200px;
+background-color: white;
+transition: .3s;
+}
